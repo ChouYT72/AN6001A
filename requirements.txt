@@ -2,5 +2,3 @@ flask
 gunicorn
 textblob
 google-generativeai
-os
-palm
