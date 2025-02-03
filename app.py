@@ -39,5 +39,9 @@ def GenAI_result():
     r = model.generate_content(q)
     return(render_template("GenAI_result.html", r=r.candidates[0].content.parts[0].text))
 
+@app.route("/MT", methods = ["GET","POST"])
+def MT():
+    return(render_template("MT.html"))
+
 if __name__ == "__main__":
     app.run()
